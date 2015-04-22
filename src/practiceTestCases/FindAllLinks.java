@@ -16,7 +16,7 @@ public class FindAllLinks {
  
 		driver.get("http://www.yahoo.com/");
 		// find all links on a wbpage
-		
+		System.out.println("*****");
 		java.util.List<WebElement> links = driver.findElements(By.tagName("a"));
  
 		System.out.println("NUmber of links"+links.size());
