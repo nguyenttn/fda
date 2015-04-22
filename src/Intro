@@ -1,0 +1,66 @@
+Eexample: If an element is given like this:
+
+
+1
+ <input id="UserID" name ="Username"> </input>
+
+1
+WebElement element = driver.findElement(By.name("q"));
+ 
+
+By Class Name
+With this you can find elements based on the value of the “class” attribute. If an element has many classes then this will match against each of them. A class can contain many elements.
+
+Example: If an element is given like this:
+
+
+1
+<span class="catFish"></span>
+
+1
+WebElement element = driver.findElement(By.className("catFish"));
+ 
+
+By Tag Name
+With this you can find elements by their tag names.
+
+Example: If an element is given like this:
+
+
+1
+<dt> <a href="select_tag.html">Tag Selected</a> </dt>
+
+1
+WebElement element=driver.findElement(By.tagName("dt"));
+ 
+
+By Link Text
+With this you can find elements of “a” tags(Link) with the link names. Use this when you know link text used within an anchor tag.
+
+Example: If an element is given like this:
+
+
+1
+<a href="link.html">Name of the Link</a>
+
+1
+WebElement element=driver.findElement(By.linkText("Name of the Link"));
+ 
+
+By Partial Link Text
+With this you can find elements of “a” tags(Link) with the partial link names. Use this when you know link text used within an anchor tag.
+
+Example: If an element is given like this
+
+
+1
+<a href="link.html">Name of the Link</a>
+
+1
+WebElement element=driver.findElement(By.partialLinkText("Name of"));
+Or
+
+
+1
+WebElement element=driver.findElement(By.partialLinkText("the Link"));
+ 
